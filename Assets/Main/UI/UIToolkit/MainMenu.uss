@@ -1,0 +1,41 @@
+.menuButton {
+    width: 70%;
+    height: 20%;
+    margin-bottom: 50px;
+    -unity-font: url("project://database/Assets/Main/UI/Fonts/alagard.ttf?fileID=12800000&guid=8e2703e02fb45d44fa0f707989ffdc0f&type=3#alagard");
+    font-size: 50px;
+    -unity-font-definition: initial;
+    text-shadow: 5px 5px 0 rgb(0, 0, 0);
+    background-image: url("project://database/Assets/Main/Textures/UI/MainMenu/MenuButton.png?fileID=21300000&guid=adc70e9eacf027643b9ab9ef973d5060&type=3#MenuButton");
+    -unity-background-scale-mode: stretch-to-fill;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.menuButton:active {
+    width: 60%;
+    height: 15%;
+    margin-bottom: 50px;
+    -unity-font: url("project://database/Assets/Main/UI/Fonts/alagard.ttf?fileID=12800000&guid=8e2703e02fb45d44fa0f707989ffdc0f&type=3#alagard");
+    font-size: 50px;
+    -unity-font-definition: initial;
+    text-shadow: 5px 5px 0 rgb(0, 0, 0);
+    background-image: url("project://database/Assets/Main/Textures/UI/MainMenu/MenuButton.png?fileID=21300000&guid=adc70e9eacf027643b9ab9ef973d5060&type=3#MenuButton");
+    -unity-background-scale-mode: stretch-to-fill;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.25s;
+    justify-content: center;
+    align-items: center;
+    transition-property: scale;
+}

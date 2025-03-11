@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Main/UI/UIToolkit/MainMenu.uss?fileID=7433441132597879392&amp;guid=60c860fc98a9edf43b55be2723442ae2&amp;type=3#MainMenu" />
+    <ui:VisualElement name="root" style="align-items: center; justify-content: center; width: 30%; height: 80%; margin-left: 5%; flex-shrink: 0; flex-grow: 1;">
+        <ui:VisualElement name="MainPanel" style="height: 100%; width: 100%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/MainMenu/MainPanel.png?fileID=2800000&amp;guid=bd2f002c60dd23941b2eccfcf876cc4a&amp;type=3#MainPanel&quot;);">
+            <ui:VisualElement name="UpBox" style="width: 100%; height: 30%; justify-content: center; align-items: center;">
+                <ui:Label text="Garmory&#10;Project" display-tooltip-when-elided="true" style="width: 100%; height: 70%; -unity-font: url(&quot;project://database/Assets/Main/UI/Fonts/alagard.ttf?fileID=12800000&amp;guid=8e2703e02fb45d44fa0f707989ffdc0f&amp;type=3#alagard&quot;); -unity-text-align: middle-center; color: rgb(255, 255, 255); font-size: 120px; -unity-font-definition: initial; white-space: nowrap; text-shadow: 5px 3px 0 rgb(0, 0, 0); align-items: center; justify-content: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="BotBox" style="width: 100%; height: 50%; align-items: center; padding-top: 0; padding-bottom: 0; margin-top: 30px; justify-content: center;">
+                <ui:Button text="Play" display-tooltip-when-elided="true" name="PlayButton" class="menuButton" />
+                <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menuButton" style="padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
