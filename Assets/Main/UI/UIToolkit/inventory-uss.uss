@@ -1,0 +1,129 @@
+.InventoryPanel {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-image: url("project://database/Assets/Main/Textures/UI/Inventory/InventoryBackground.png?fileID=2800000&guid=d970b4f7323478449ab739e4ff69814b&type=3#InventoryBackground");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.InventoryTitle {
+    text-align: center;
+    width: 100%;
+    border-top-width: 3px;
+    border-right-width: 0;
+    border-bottom-width: 3px;
+    border-left-width: 0;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    -unity-background-image-tint-color: rgba(8, 8, 8, 0.53);
+}
+
+.inventoryContainer {
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    align-items: stretch;
+}
+
+.leftBox {
+    flex-grow: 60;
+    background-color: gray;
+    margin-right: 0;
+    height: 100%;
+}
+
+.rightBox {
+    flex-grow: 40;
+    background-color: darkgray;
+    height: 100%;
+}
+
+.box {
+    height: 100%;
+}
+
+#SlotListScrollView {
+    height: 400px;
+    overflow: scroll;
+}
+
+.slot {
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.slot-icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    visibility: visible;
+    transition-property: scale;
+    transition-duration: 0.25s;
+}
+
+.slot-background {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    background-image: url("project://database/Assets/Main/Textures/Items/Rarity/ItemRarityCommon.png?fileID=21300000&guid=5be4320d448dd9040a0c9abd3f40f100&type=3#ItemRarityCommon");
+}
+
+.slot-icon:active {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    visibility: visible;
+    transition-property: scale;
+    transition-duration: 0.25s;
+    scale: 1.3 1.3;
+}
+
+.stats {
+    width: 50%;
+    font-size: 20px;
+    -unity-font: url("project://database/Assets/Main/UI/Fonts/alagard.ttf?fileID=12800000&guid=8e2703e02fb45d44fa0f707989ffdc0f&type=3#alagard");
+    -unity-font-definition: initial;
+    background-image: url("project://database/Assets/Main/Textures/UI/Inventory/StatBackground.png?fileID=21300000&guid=439ab081ad7035d41b31451631c206db&type=3#StatBackground");
+    flex-wrap: wrap;
+    -unity-text-align: middle-center;
+    height: 20%;
+    -unity-background-scale-mode: stretch-to-fill;
+    margin-bottom: 4px;
+    color: rgb(255, 255, 255);
+    margin-right: 4px;
+    margin-left: 4px;
+}

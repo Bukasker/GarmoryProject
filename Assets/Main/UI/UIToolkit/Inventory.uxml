@@ -1,0 +1,72 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Main/UI/UIToolkit/inventory-uss.uss?fileID=7433441132597879392&amp;guid=844b7c822bfb14541a3b7a9947eba609&amp;type=3#inventory-uss" />
+    <ui:VisualElement name="root" class="InventoryPanel">
+        <ui:VisualElement name="InventoryTitle" class="InventoryTitle" style="margin-top: 1%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/Inventory/InventoryBackgroundBorder.png?fileID=2800000&amp;guid=37a2869d2ce1e7d459bf1155a9449795&amp;type=3#InventoryBackgroundBorder&quot;); -unity-background-image-tint-color: rgba(8, 8, 8, 0.45); margin-bottom: 1%; flex-direction: row; justify-content: center;">
+            <ui:Label text="Inventory" class="InventoryLabel" style="font-size: 50px; -unity-font: url(&quot;project://database/Assets/Main/UI/Fonts/alagard.ttf?fileID=12800000&amp;guid=8e2703e02fb45d44fa0f707989ffdc0f&amp;type=3#alagard&quot;); -unity-font-definition: initial; -unity-text-align: middle-center; text-shadow: 3px 3px 0 rgb(0, 0, 0); color: rgb(255, 255, 255);" />
+            <ui:Button text="&#10;" display-tooltip-when-elided="true" name="ExitButton" style="visibility: visible; position: absolute; align-items: center; justify-content: center; left: auto; right: 2%; width: 50px; height: 50px; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-image: url(&quot;project://database/Assets/Main/Textures/UI/MainMenu/IconPanel.png?fileID=21300000&amp;guid=a370f155f10c29941837cbe7f00447f8&amp;type=3#IconPanel&quot;); background-color: rgba(88, 88, 88, 0); -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-background-scale-mode: stretch-to-fill; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:VisualElement style="width: 80%; height: 80%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/MainMenu/ExitIcon.png?fileID=21300000&amp;guid=adedf4c43485131439928b023cc50850&amp;type=3#ExitIcon&quot;);" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:VisualElement name="InventoryContainer" class="inventoryContainer">
+            <ui:VisualElement name="LeftBox" class="leftBox box" style="background-color: rgba(128, 128, 128, 0); flex-direction: column; width: 60%; flex-grow: 55;">
+                <ui:VisualElement name="CategoryPanel" style="width: 100%; height: 15%; flex-direction: row;">
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryAll" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconAll.png?fileID=2800000&amp;guid=80efebd80f3750742814d27f5798bd2b&amp;type=3#CategoryIconAll&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryArmor" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconArmor.png?fileID=2800000&amp;guid=8921da5b6bb26264bb43316cf578f7c2&amp;type=3#CategoryIconArmor&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryBoots" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconBoots.png?fileID=2800000&amp;guid=da587cadb4cd47641aa70de69ee44bcc&amp;type=3#CategoryIconBoots&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryHelmet" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconHelmet.png?fileID=2800000&amp;guid=6cc40ac475afda64193bfe7d69a47e9a&amp;type=3#CategoryIconHelmet&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryNecklace" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconNecklace.png?fileID=2800000&amp;guid=0a7f6d31e192a3f4590e882f5a26b0d5&amp;type=3#CategoryIconNecklace&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryRing" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconRing.png?fileID=2800000&amp;guid=d3acbd47390bac448b8336fec43cb879&amp;type=3#CategoryIconRing&quot;);" />
+                    </ui:Button>
+                    <ui:Button display-tooltip-when-elided="true" name="CategoryWeapon" style="width: 70px; height: 70px; margin-left: 8px; overflow: hidden; background-color: rgba(31, 31, 31, 0.53); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0);">
+                        <ui:VisualElement name="Icon" style="position: absolute; justify-content: space-around; align-items: center; left: 0; top: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/Main/Textures/Items/Category/CategoryIconWeapon.png?fileID=2800000&amp;guid=e252dca4cd58b284cafba1e047dcbfb5&amp;type=3#CategoryIconWeapon&quot;);" />
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement name="Grid" class="Grid" style="flex-direction: row; flex-wrap: nowrap; height: 100%; width: 100%; flex-shrink: 1; flex-grow: 0; justify-content: space-between;">
+                    <ui:ScrollView name="SlotListScrollView" style="width: 100%; height: 100%; overflow: scroll;">
+                        <ui:VisualElement name="SlotContainer" style="left: auto; top: auto; right: auto; bottom: auto; align-items: flex-start; justify-content: center; flex-direction: row; flex-wrap: wrap; padding-top: 6px; padding-right: 6px; padding-bottom: 6px; padding-left: 6px; border-top-width: 8px; border-left-color: rgb(59, 31, 69); border-right-color: rgb(59, 31, 69); border-top-color: rgb(59, 31, 69); border-bottom-color: rgb(59, 31, 69); border-bottom-width: 8px; border-right-width: 8px; border-left-width: 8px; height: auto;" />
+                    </ui:ScrollView>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="RightBox" class="rightBox box" style="background-color: rgba(169, 169, 169, 0); width: 40%; justify-content: flex-start; align-items: center; flex-grow: 40;">
+                <ui:VisualElement picking-mode="Ignore" name="CharacterPreview" style="width: 70%; height: 70%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/UI%20Elements/Character.png?fileID=21300000&amp;guid=923d3f89176451c48a0a6e1fbcb7c1ae&amp;type=3#Character&quot;); -unity-background-scale-mode: scale-to-fit; position: absolute;" />
+                <ui:VisualElement name="CharacterEquipmentPanel" style="width: 100%; height: 100%; justify-content: flex-start; align-items: flex-start; flex-wrap: nowrap; flex-direction: row; flex-basis: auto;">
+                    <ui:VisualElement name="LeftEquipPanel" style="flex-direction: column; width: 50%; height: 100%; padding-top: 0;">
+                        <ui:Button display-tooltip-when-elided="true" name="HelmetSlot" style="align-items: flex-start; width: 100px; height: 100px; margin-left: 20px; padding-right: 0; padding-left: 0; padding-bottom: 0; padding-top: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+                        <ui:Button display-tooltip-when-elided="true" name="ArmorSlot" style="align-items: flex-start; width: 100px; height: 100px; justify-content: flex-start; padding-top: 0; padding-bottom: 0; margin-top: 50px; margin-bottom: 50px; margin-left: 0; margin-right: 5px; padding-right: 0; padding-left: 0;" />
+                        <ui:Button display-tooltip-when-elided="true" name="BootsSlot" style="align-items: flex-start; width: 100px; height: 100px; margin-left: 20px; margin-right: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-top: 0;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="RightEquipPanel" style="flex-direction: column; align-items: flex-end; width: 50%; height: 100%;">
+                        <ui:Button display-tooltip-when-elided="true" name="WeaponSlot" style="align-items: flex-start; width: 100px; height: 100px; margin-left: 3px; padding-right: 0; padding-left: 0; padding-bottom: 0; padding-top: 0; margin-right: 20px; margin-top: 0; margin-bottom: 0;" />
+                        <ui:Button display-tooltip-when-elided="true" name="NecklaceSlot" style="align-items: flex-start; width: 100px; height: 100px; justify-content: flex-start; padding-top: 0; padding-bottom: 0; margin-top: 50px; margin-bottom: 50px; margin-left: 0; margin-right: 5px; padding-right: 0; padding-left: 0;" />
+                        <ui:Button display-tooltip-when-elided="true" name="RingSlot" style="align-items: flex-start; width: 100px; height: 100px; margin-left: 0; margin-right: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; margin-bottom: 0; margin-top: 0;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="Stats" style="width: 100%; height: 30%; justify-content: flex-end; flex-direction: row;">
+                    <ui:VisualElement name="LeftBox" style="width: 50%; justify-content: center; align-items: flex-end; margin-bottom: 0;">
+                        <ui:Label text="DMG: 0" display-tooltip-when-elided="true" name="DamageLabel" class="stats" style="margin-bottom: 4px; height: 20%; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                        <ui:Label text="HP: 0" display-tooltip-when-elided="true" name="MaxHealthLabel" class="stats" />
+                        <ui:Label text="DEF: 0" display-tooltip-when-elided="true" name="DefenseLabel" class="stats" />
+                        <ui:Label text="LS: 0" display-tooltip-when-elided="true" name="LifeStealLabel" class="stats" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="RightBox" style="width: 50%; align-items: flex-start; justify-content: center;">
+                        <ui:Label text="CRIT: 0" display-tooltip-when-elided="true" name="CritChanceLabel" class="stats" />
+                        <ui:Label text="AS: 0" display-tooltip-when-elided="true" name="AttackSpeedLabel" class="stats" />
+                        <ui:Label text="MS: 0" display-tooltip-when-elided="true" name="MovementSpeedLabel" class="stats" />
+                        <ui:Label text="LUCK: 0" display-tooltip-when-elided="true" enable-rich-text="false" name="LuckLabel" class="stats" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
