@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Main/UI/UIToolkit/Menu.uss?fileID=7433441132597879392&amp;guid=87d14e18cd9301546ab5e8d803aa3877&amp;type=3#Menu" />
+    <ui:VisualElement name="root" style="width: 20%; height: 20%; flex-direction: row; justify-content: flex-end; left: auto; right: 0; top: auto; position: absolute; bottom: 0;">
+        <ui:Button display-tooltip-when-elided="true" name="InventoryButton" class="menuButton">
+            <ui:VisualElement name="Icon" style="width: 80%; height: 80%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/Inventory/InventoryIcon.png?fileID=21300000&amp;guid=32b487140eb7976429f7ff0eba823702&amp;type=3#InventoryIcon&quot;); visibility: visible; overflow: hidden; display: flex;" />
+        </ui:Button>
+        <ui:Button display-tooltip-when-elided="true" name="MainMenuButton" class="menuButton" style="justify-content: center; align-items: center;">
+            <ui:VisualElement name="Icon" style="width: 80%; height: 80%; background-image: url(&quot;project://database/Assets/Main/Textures/UI/MainMenu/MainMenuIcon.png?fileID=21300000&amp;guid=2576752821e99754f913619657560f62&amp;type=3#MainMenuIcon&quot;); justify-content: center; align-items: center;" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
